@@ -3,8 +3,8 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 
 # ========= إعداداتك =========
-TELEGRAM_TOKEN = "9179220217:AAEBdVFKMhaEJ4_ssLD2LZmf3LYNMGobPUQ"
-CHAT_ID = "9040783399"
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 FILE_TRADES = "trades.json"
 FILE_OPEN = "open_trade.json"
 LOT_SIZE = 0.02  # 0.02 lot = 2 ounce
